@@ -1,0 +1,13 @@
+
+//faz backup para local destonado
+select * into outfile 'c:/logusuario.txt' from log_usuario;
+
+
+deleta todos os dados
+delete from log_usuario 
+
+restaura os dados de backup
+load data infile 'c:/logusuario.txt' into table log_usuario;
+
+grava a senha ja criptografada
+UPDATE usuario set senha_usuario = PASSWORD(xxxx) where matricula_usuario = 'xxxxx'

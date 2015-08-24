@@ -1,0 +1,1 @@
+select * from usuario a, incineracao b where a.matricula_usuario = b.matricula_usuario and a.matricula_usuario = '00000001'

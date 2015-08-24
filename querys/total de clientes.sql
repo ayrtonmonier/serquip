@@ -1,0 +1,1 @@
+select count(cod_cli) as 'total de clientes' from cliente where situacao != 'desconhec.';
